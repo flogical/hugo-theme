@@ -712,6 +712,8 @@ body {
   /* 1 */
   line-height: inherit;
   /* 2 */
+  background-color:gainsboro;
+  color: #f8a100;
 }
 
 /*
