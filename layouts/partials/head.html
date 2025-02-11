@@ -34,7 +34,7 @@
 {{- end }}
 {{ partialCached "head/css" . }}
 {{ partialCached "head/js" . }}
-{{ partial "posts/scripts" . }}
+{{ partial "posts/scripts.html" . }}
 {{- if or .Params.math site.Params.math }}
   {{ partial "head/math" . }}
 {{- end }}
