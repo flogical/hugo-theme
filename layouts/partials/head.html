@@ -34,10 +34,11 @@
 {{- end }}
 {{ partialCached "head/css" . }}
 {{ partialCached "head/js" . }}
+{{ partial "posts/scripts" . }}
 {{- if or .Params.math site.Params.math }}
   {{ partial "head/math" . }}
 {{- end }}
 {{ partial "head/jsonld" . }}
 
-<!--icons for Posts..toReview** as cannot be placed in local theme layout file...this base theme file have precedence! -->
-<script defer src="https://use.fontawesome.com/releases/v5.0.11/js/all.js" integrity="sha384-ImVoB8Er8knetgQakxuBS4G3RSkyD8IZVVQCAnmRJrDwqJFYUE4YOv+DbIofcO9C" crossorigin="anonymous"></script>
+<!--icons for Posts..toReview** as cannot be placed in local theme layout file...this base theme file have precedence! --weirdly dont work when pushed to repo so forced via 'posts/scripts' above
+<script defer src="https://use.fontawesome.com/releases/v5.0.11/js/all.js" integrity="sha384-ImVoB8Er8knetgQakxuBS4G3RSkyD8IZVVQCAnmRJrDwqJFYUE4YOv+DbIofcO9C" crossorigin="anonymous"></script>-->
